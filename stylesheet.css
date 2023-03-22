@@ -94,6 +94,10 @@ header {
   margin-top: 10px;
 }
 
+.logo-icon{
+  /* filter: invert(80%); */
+}
+
 .header-top{
   display: flex;
   justify-content: space-between;
@@ -103,19 +107,29 @@ header {
   display: block;
   height: 95px;
   width: 95px;
-  background-color: #fff;
+  background-color:rgba(255, 255, 255, .6);
   border-top: solid blue 5px;
+  border-right: 1px solid black;
   margin-top: -5px;
   text-align: center;
   position: relative;
 }
 .h-box a{
-  color: black;
   position: absolute;
   top:0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.h-box p{
+  margin-top: 0;
+}
+
+.h-box-blue{
+  border-top-color: blue;
+}
+.h-box-orange{
+  border-top-color: orange;
 }
 
 .header-left {
@@ -138,6 +152,10 @@ header {
 
 .header-right a:hover {
   background-color: rgba(255,255,255,0.3);
+}
+
+.header-bottom{
+  display: flex;
 }
 
 .lesson-wrapper {
