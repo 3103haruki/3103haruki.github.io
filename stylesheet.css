@@ -17,9 +17,14 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+/* 上下余白調整 */
+.vertical-margin{
+  margin:50px 0;
+}
 /* トップ画面 */
 .top-wrapper {
-  padding: 180px 0 100px 0;
+  padding: 170px 0 100px 0;
   background-image: url(top.png);
   background-size: cover;
 }
@@ -29,13 +34,28 @@ a {
   flex-direction: row;
 }
 
-.cl-msg-square{
+.top-message{
+  color: #fff;
+}
+/* h1行の隣の四角 */
+.msg-square{
   width: 0;
   height: 0;
   border-width: 20px 5px;
   border-style: solid;
-  border-color: blue;
   margin:10px 3px 0 0;
+}
+
+.cl-msg-square{
+  border-color: blue;
+}
+
+.topic-msg-square{
+  border-color: purple;
+}
+
+.swimmer-msg-square{
+  border-color: skyblue;
 }
 
 .callender{
@@ -68,7 +88,7 @@ a {
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 25px;
   letter-spacing: 5px;
 }
@@ -199,6 +219,55 @@ header {
 .header-bottom{
   display: flex;
 }
+
+.contents{
+  /* background-color:  red; */
+  display: flex;
+  width: 100%;
+}
+
+.to-add-link{
+  display: flex;
+  justify-content: space-between;
+}
+
+.to-add-link a{
+    line-height: 50px;
+    color: rgba(255, 255, 255, .8);
+    padding-right: 10px;
+}
+
+.horizon-div{
+  border: 5px rgba(255, 255, 255, .8) solid;
+  width: 50%;
+}
+
+.horizon-div ul{
+  margin-top: 0;
+}
+
+.horizon-div li{
+  list-style: none;
+  color: rgba(255,255,255, 0.8);
+  font-size: 19px;
+}
+
+.horizon-left{
+  /* background-color: white; */
+}
+
+.horizon-right{
+  /* background-color: tomato; */
+}
+
+.r-bottom{
+  border-top: 5px rgba(255, 255, 255, 0.8) solid;
+}
+
+.r-bottom, .r-top{
+  padding-left: 5px;
+}
+
 /* 大枠 */
 .lesson-wrapper {
   height: 580px;
