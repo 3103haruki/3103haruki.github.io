@@ -167,6 +167,11 @@ header {
   /* filter: invert(80%); */
 }
 
+.japan{
+  padding-top: 2px;
+  width: 10px;
+}
+
 .header-top{
   display: flex;
   justify-content: space-between;
