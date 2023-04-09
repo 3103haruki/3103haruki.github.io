@@ -18,13 +18,6 @@ a {
   margin: 0 auto;
 }
 
-.test-box{
-  background-color: red;
-  width: 100%;
-  height: 100px;
-  display: none;
-}
-
 /* 上下余白調整 */
 .vertical-margin{
   margin:50px 0;
@@ -278,6 +271,66 @@ header {
 
 .r-bottom, .r-top{
   padding-left: 5px;
+}
+/* topicの設定 */
+.topics{
+  display: flex;
+  justify-content: space-between;
+}
+.topic-list{
+  width: 40%;
+}
+.board-wrapper{
+  padding: 10px 0;
+  background-color: rgba(255,255,255,.9);
+}
+.topic-list li{
+  padding: 4px 0;
+}
+.topic-board{
+  width: 90%;
+  margin: 15px auto;
+  border: 2px solid orange;
+  position: relative;
+}
+.topic-board:before, .topic-board:after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: solid 2px orange;
+  border-radius: 50%;
+}
+.topic-board:before{
+  top: -13px;
+  left: -12px;
+}
+.topic-board:after{
+  bottom: -13px;
+  right: -12px;
+}
+.topic-detail{
+  width: 58%;
+  background-color: skyblue;
+}
+.paste-board{
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 15px auto;
+  width: 95%;
+  height: 300px;
+}
+/* モーダル */
+.modal{
+  margin: 10px;
+}
+.modal p{
+  opacity: 1;
+  margin-bottom: 5px;
+}
+
+.gaiyo-modal{
+  background-color: orange;
+  padding: 10px;
 }
 
 /* 大枠 */
