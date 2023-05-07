@@ -13,7 +13,7 @@
     <div class="container">
       <div class="header-top">
         <div class="header-left">
-          <img class="logo" src="images/logo.svg">
+          <a href="index.html"><img class="logo" src="images/logo.svg"></a>
         </div>
         <span class="fa fa-bars menu-icon"></span>
         <div class="header-right">
@@ -28,12 +28,12 @@
       <div class="header-bottom">
         <div class="h-box h-box-blue">
           <img class="logo logo-icon" src="images/swimmer.png">
-          <a href="#"></a>
-          <p>注目選手</p>
+          <a href="https://www.tv-asahi.co.jp/swimming/players/" target="_blank"></a>
+          <p>代表一覧</p>
         </div>
         <div class="h-box h-box-orange">
           <img class="logo logo-icon" src="images/watch.png">
-          <a href="#"></a>
+          <a href="#" target="_blank"></a>
           <p>注目種目</p>
         </div>
       </div>
@@ -44,7 +44,7 @@
     <div class="container">
       <div class="top-message">
         <div class="cl-msg-square msg-square"></div>
-        <h1>トピックから選ぶ</h1>
+        <h1 class="backblack">トピックから選ぶ</h1>
       </div>
       <div class="topics">
         <div class="topic-list">
@@ -68,21 +68,36 @@
           <div class="paste-board">
             <div class="modal gaiyo-modal modal-active modal-blue">
               <h3>大会概要</h3>
-              <p>2023年07月23日　競泳競技開始</p>
-              <p>会場：マリンメッセ福岡A館</p>
+              <div class="gaiyo-flex">
+                <div class="box">
+                  <p>2023年07月23日　競泳競技開始</p>
+                  <p>会場：マリンメッセ福岡A館</p>
+                  <img class="pool" src="images/pic_marinemesse03.png" alt="会場">
+                </div>
+                <div class="box">
+                  <div class="rule">
+                    <p>日本開催は2001年の福岡大会ぶり</p>
+                    <p>優勝種目は、即パリ五輪代表内定</p>
+                    <p>日水連の目標はメダル５個以上</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="modal tokui-modal modal-pink">
               <div class="modal-text">
                 <h3>競泳は瞬間ごとの「得意」が輝く競技</h3>
                 <p><img class="japan" src="images/clean.png">スタートの技術と瞬発力が光る</p>
                 <p><img class="japan" src="images/clean.png">先行して、前を譲らない力が光る</p>
-                <p><img class="japan" src="images/clean.png">最後に抜き去る力が光る</p>
+                <p><img class="japan" src="images/clean.png"><span  class="high-light">最後に抜き去る力が光る</span></p>
+                <div class="coolest">
+                  <p>中でも一番かっこいい！</p>
+                </div>
               </div>
               <div class="view-more">
                 <div class="top-kakko">
                 </div>
                 <div class="view-more-btn">
-                  <a href="#">View More</a>
+                  <a target="_blank" href="https://www.google.com/search?q=%E8%90%A9%E9%87%8E%E5%85%AC%E4%BB%8B%E3%80%80%E3%82%A2%E3%82%B8%E3%82%A2%E5%A4%A7%E4%BC%9A&source=lmns&bih=852&biw=1504&hl=ja&sa=X&ved=2ahUKEwiI2_a18uL-AhWm-GEKHX5fCpIQ_AUoAHoECAEQAA#fpstate=ive&vld=cid:f11be620,vid:IjgqgsbfEx0">View More</a>
                 </div>
                 <div class="bottom-kakko">
                 </div>
@@ -167,9 +182,9 @@
             <div class="modal world-remarked modal-blue">
               <div class="modal-text-l">
                 <h3>最注目の各国のスタースイマー達。</h3>
-                <p><img class="japan" src="images/battle.png">中距離女子界の三つ巴<img class="japan" src="images/united-states.png">レデッキ― vs<img class="japan" src="images/australia.png">ティットマス vs<img class="japan" src="images/france.png">マッキントッシュ</p>
-                <p><img class="japan" src="images/battle.png">「怪物」と呼ばれたフェルプスに迫るフランスのスイマー<img class="japan" src="images/france.png">マルシャン</p>
-                <p><img class="japan" src="images/battle.png">昨年、更新不可能と言われた自由形の世界記録を13年ぶりに更新　ポポビッチ</p>
+                <p><img class="flags" src="images/battle.png">中距離女子界の三つ巴<img class="flags" src="images/united-states.png">レデッキ― vs<img class="flags" src="images/australia.png">ティットマス vs<img class="flags" src="images/france.png">マッキントッシュ</p>
+                <p><img class="flags" src="images/battle.png">「怪物」と呼ばれたフェルプスに迫るフランスのスイマー<img class="flags" src="images/france.png">マルシャン</p>
+                <p><img class="flags" src="images/battle.png">昨年、更新不可能と言われた自由形の世界記録を13年ぶりに更新　ポポビッチ</p>
               </div>
               <div class="view-more2">
                 <div class="view-more-triangle">
@@ -182,9 +197,9 @@
             <div class="modal gossip1 modal-pink">
               <div class="modal-text-l">
                 <h3>日本人選手を多く出場させる為の緩和策に賛否の声</h3>
-                <p>代表選考の条件「日本選手権にて派遣標準記録突破かつ2位以内」</p>
-                <p>パリ五輪標準（速め）と福岡標準（遅め）が存在し、日本選手権は前者基準で実施</p>
-                <p>日本選手権終了後に「追加選抜」という形で福岡標準を切った選手が内定</p>
+                <p><img class="flags" src="images/fire.png">代表選考の条件「日本選手権にて派遣標準記録突破かつ2位以内」</p>
+                <p><img class="flags" src="images/fire.png">パリ五輪標準（速め）と福岡標準（遅め）が存在し、日本選手権は前者基準で実施</p>
+                <p><img class="flags" src="images/fire.png">日本選手権終了後に「追加選抜」という形で福岡標準を切った選手が内定</p>
               </div>
               <div class="view-more2">
                 <div class="view-more-triangle">
@@ -197,7 +212,7 @@
             <div class="modal gossip2 modal-blue">
               <div class="modal-text-l">
                 <h3>世界一の平泳ぎスイマー、世界水泳2023は欠場</h3>
-                <p><img class="japan" src="images/united-kingdom.png"><span class="swimmer-name">アダム・ピーティ (Adam Peaty)</span><span class="small-letter">選手</span></p>
+                <p><img class="flags" src="images/united-kingdom.png"><span class="swimmer-name">アダム・ピーティ (Adam Peaty)</span><span class="small-letter">選手</span></p>
                 <p class="swimmer-description">100m平泳ぎの世界記録保持者でリオ・東京五輪金メダリスト</p>
                 <p class="swimmer-description">「この競技でやりたかったことは、全部やったのになぜまだ戦うの？」</p>
                 <p class="swimmer-description">それでも、3大会連続の金メダルを目指してパリ五輪へ。</p>
@@ -214,207 +229,253 @@
         </div>
       </div>
       <div id="close-slide">
+        <div class="minus">
+        </div>
       </div>
       <div class="slide-board">
+        <div class="slide5-2">
+          <p>表彰台期待種目</p>
+          <div class="slide5-flex">
+            <div class="s5-2box">
+              男子200m<br>　バタフライ
+            </div>
+            <div class="s5-2box">
+              男子400m<br>　個人メドレー
+            </div>
+          </div>
+          <div class="slide5-flex">
+            <div class="s5-2box">
+              男子200m<br>　平泳ぎ
+            </div>
+            <div class="s5-2box">
+              女子200m<br>　バタフライ
+            </div>
+          </div>
+          <div class="slide5-flex">
+            <div class="s5-2box2">
+              男子200m<br>　個人メドレー
+            </div>
+            <div class="s5-2box2">
+              男子100m<br>　バタフライ
+            </div>
+          </div>
+          <div class="slide5-flex">
+            <div class="s5-2box2">
+              男子200m<br>　自由形
+            </div>
+            <div class="s5-2box2">
+              女子100m<br>　平泳ぎ
+            </div>
+          </div>
+          <a href="https://swimswam.com/ranking/" target="_blank" class="WR">World Ranking</a>
+        </div>
       </div>
       <div class="slide-board-back">
       </div>
-      <div class="vertical-margin"></div>
-      <div class="callender">
-        <div class="cl-box">
-          <table class="cl-line">
-            <tr class="cl-line">
-              <th>大会1日目</th>
-            </tr>
-            <tr class="cl-line">
-              <td>07/23(日)</td>
-            </tr>
-            <tr class="cl-line">
-              <td>
-                男子400m自由形<br>
-                女子400m自由形<br>
-                男子400m個人メドレー<br>
-                女子4×100mフリーリレー<br>
-                男子4×100mフリーリレー
-              </td>
-            </tr>
-          </table>
+    </div>
+  <div class="container">
+    <div class="top-message">
+      <div class="cl-msg-square msg-square"></div>
+      <h1 class=" backblack">競技日程</h1>
+    </div>
+    <div class="callender cl-border">
+      <div class="cl-box">
+        <table class="cl-line">
+          <tr class="cl-line">
+            <th>大会1日目</th>
+          </tr>
+          <tr class="cl-line cl-border-updown">
+            <td>07/23(日)</td>
+          </tr>
+          <tr class="cl-line">
+            <td>
+              <img class="male" src="images/male.png">400m自由形<br>
+              <img class="male" src="images/female.png">400m自由形<br>
+              <img class="male" src="images/male.png">400m個人メドレー<br>
+              <img class="male" src="images/male.png">4×100m Fr R<br>
+              <img class="male" src="images/male.png">4×100m Fr R
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cl-box">
+        <table class="cl-line">
+          <tr class="cl-line">
+            <th>大会2日目</th>
+          </tr>
+          <tr class="cl-line cl-border-updown">
+            <td>07/24(月)</td>
+          </tr>
+          <tr class="cl-line">
+            <td>
+              <img class="male" src="images/male.png">100m平泳ぎ<br>
+              <img class="male" src="images/female.png">100mバタフライ<br>
+              <img class="male" src="images/male.png">50mバタフライ<br>
+              <img class="male" src="images/female.png">200m個人メドレー
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cl-box">
+        <table class="cl-line">
+          <tr class="cl-line">
+            <th>大会3日目</th>
+          </tr>
+          <tr class="cl-line cl-border-updown">
+            <td>07/25(火)</td>
+          </tr>
+          <tr class="cl-line">
+            <td>
+              <img class="male" src="images/male.png">200m自由形<br>
+              <img class="male" src="images/female.png">1500m自由形<br>
+              <img class="male" src="images/male.png">100m背泳ぎ<br>
+              <img class="male" src="images/male.png">100m背泳ぎ<br>
+              <img class="male" src="images/female.png">100m平泳ぎ
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cl-box">
+        <table class="cl-line">
+          <tr class="cl-line">
+            <th>大会4日目</th>
+          </tr>
+          <tr class="cl-line cl-border-updown">
+            <td>07/26(水)</td>
+          </tr>
+          <tr class="cl-line">
+            <td>
+              <img class="male" src="images/male.png">800m自由形<br>
+              <img class="male" src="images/female.png">200m自由形<br>
+              <img class="male" src="images/male.png">200mバタフライ<br>
+              <img class="male" src="images/male.png">50m平泳ぎ<br>
+              <img class="male" src="images/gender.png">4×100m Med R
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cl-box">
+        <table class="cl-line">
+          <tr class="cl-line">
+            <th>大会5日目</th>
+          </tr>
+          <tr class="cl-line cl-border-updown">
+            <td>07/27(木)</td>
+          </tr>
+          <tr class="cl-line">
+            <td>
+              <img class="male" src="images/female.png">200mバタフライ<br>
+              <img class="male" src="images/male.png">100m自由形<br>
+              <img class="male" src="images/female.png">50m背泳ぎ<br>
+              <img class="male" src="images/male.png">200m個人メドレー<br>
+              <img class="male" src="images/female.png">4×200m Fr R
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cl-box">
+        <table class="cl-line">
+          <tr class="cl-line">
+            <th>大会6日目</th>
+          </tr>
+          <tr class="cl-line cl-border-updown">
+            <td>07/28(金)</td>
+          </tr>
+          <tr class="cl-line">
+            <td>
+              <img class="male" src="images/female.png">100m自由形<br>
+              <img class="male" src="images/female.png">200m平泳ぎ<br>
+              <img class="male" src="images/male.png">200m背泳ぎ<br>
+              <img class="male" src="images/male.png">200m平泳ぎ<br>
+              <img class="male" src="images/male.png">4×200m Fr R
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cl-box">
+        <table class="cl-line">
+          <tr class="cl-line">
+            <th>大会7日目</th>
+          </tr>
+          <tr class="cl-line cl-border-updown">
+            <td>07/29(土)</td>
+          </tr>
+          <tr class="cl-line">
+            <td>
+              <img class="male" src="images/female.png">50mバタフライ<br>
+              <img class="male" src="images/male.png">50m自由形<br>
+              <img class="male" src="images/male.png">100mバタフライ<br>
+              <img class="male" src="images/female.png">200m背泳ぎ<br>
+              <img class="male" src="images/female.png">800m自由形<br>
+              <img class="male" src="images/gender.png">4×100m Fr R
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cl-box">
+        <table class="cl-line">
+          <tr class="cl-line">
+            <th>大会8日目</th>
+          </tr>
+          <tr class="cl-line cl-border-updown">
+            <td>07/30(日)</td>
+          </tr>
+          <tr class="cl-line">
+            <td>
+              <img class="male" src="images/male.png">50m背泳ぎ<br>
+              <img class="male" src="images/female.png">50m平泳ぎ<br>
+              <img class="male" src="images/male.png">1500m自由形<br>
+              <img class="male" src="images/female.png">400m個人メドレー<br>
+              <img class="male" src="images/male.png">4×100m Med R<br>
+              <img class="male" src="images/female.png">4×100m Med R
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="vertical-margin"></div>
+  <div class="container">
+    <div class="contents">
+      <div class="horizon-left horizon-div">
+        <div class="top-message">
+          <div class="con-msg-square"></div>
+          <h1>大会情報</h1>
         </div>
-        <div class="cl-box">
-          <table class="cl-line">
-            <tr class="cl-line">
-              <th>大会2日目</th>
-            </tr>
-            <tr class="cl-line">
-              <td>07/24(月)</td>
-            </tr>
-            <tr class="cl-line">
-              <td>
-                男子100m平泳ぎ<br>
-                女子100mバタフライ<br>
-                男50mバタフライ<br>
-                女子200m個人メドレー
-              </td>
-            </tr>
-          </table>
+        <p>←</p>
+      </div>
+      <div class="horizon-right horizon-div">
+        <div class="r-top">
+          <div class="to-add-link">
+            <div class="top-message">
+              <div class="topic-msg-square msg-square"></div>
+              <h1>トピックから選ぶ</h1>
+            </div>
+            <a href="javascript:void(0)" onclick="testFunc();">show more</a>
+          </div>
+          <ul class="topic-top">
+            <li>世代交代を担う10代選手たちの躍動</li>
+            <li>苦悩を経て代表獲得の1999・2000年世代選手</li>
+            <li>里見的最注目選手と世界のライバル</li>
+            <li>競泳少年時代から見てきた入江選手の集大成</li>
+            <li>etc...</li>
+          </ul>
         </div>
-        <div class="cl-box">
-          <table class="cl-line">
-            <tr class="cl-line">
-              <th>大会3日目</th>
-            </tr>
-            <tr class="cl-line">
-              <td>07/25(火)</td>
-            </tr>
-            <tr class="cl-line">
-              <td>
-                男子200m自由形<br>
-                女子1500m自由形<br>
-                男子100m背泳ぎ<br>
-                男子100m背泳ぎ<br>
-                女子100m平泳ぎ
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="cl-box">
-          <table class="cl-line">
-            <tr class="cl-line">
-              <th>大会4日目</th>
-            </tr>
-            <tr class="cl-line">
-              <td>07/26(水)</td>
-            </tr>
-            <tr class="cl-line">
-              <td>
-                男子800m自由形<br>
-                女子200m自由形<br>
-                男子200mバタフライ<br>
-                男子50m平泳ぎ<br>
-                混合4×100mメドレーリレー
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="cl-box">
-          <table class="cl-line">
-            <tr class="cl-line">
-              <th>大会5日目</th>
-            </tr>
-            <tr class="cl-line">
-              <td>07/27(木)</td>
-            </tr>
-            <tr class="cl-line">
-              <td>
-                女子200mバタフライ<br>
-                男子100m自由形<br>
-                女子50m背泳ぎ<br>
-                男子200m個人メドレー<br>
-                女子4×200mフリーリレー
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="cl-box">
-          <table class="cl-line">
-            <tr class="cl-line">
-              <th>大会6日目</th>
-            </tr>
-            <tr class="cl-line">
-              <td>07/28(金)</td>
-            </tr>
-            <tr class="cl-line">
-              <td>
-                女子100m自由形<br>
-                女子200m平泳ぎ<br>
-                男子200m背泳ぎ<br>
-                男子200m平泳ぎ<br>
-                男子4×200mフリーリレー
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="cl-box">
-          <table class="cl-line">
-            <tr class="cl-line">
-              <th>大会7日目</th>
-            </tr>
-            <tr class="cl-line">
-              <td>07/29(土)</td>
-            </tr>
-            <tr class="cl-line">
-              <td>
-                女子50mバタフライ<br>
-                男子50m自由形<br>
-                男子100mバタフライ<br>
-                女子200m背泳ぎ<br>
-                女子800m自由形<br>
-                混合4×100mフリーリレー
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="cl-box">
-          <table class="cl-line">
-            <tr class="cl-line">
-              <th>大会8日目</th>
-            </tr>
-            <tr class="cl-line">
-              <td>07/30(日)</td>
-            </tr>
-            <tr class="cl-line">
-              <td>
-                男子50m背泳ぎ<br>
-                女子50m平泳ぎ<br>
-                男子1500m自由形<br>
-                400m個人メドレー<br>
-                男子4×100mメドレーリレー<br>
-                女子4×100mメドレーリレー
-              </td>
-            </tr>
-          </table>
+        <div class="r-bottom">
+          <div class="to-add-link">
+            <div class="top-message">
+              <div class="swimmer-msg-square msg-square"></div>
+              <h1>選手から選ぶ</h1>
+            </div>
+            <a href="https://www.tv-asahi.co.jp/swimming/players/" target="_blank">show more</a>
+          </div>
+          <ul class="topic-top">
+            <li>show moreボタンから代表一覧が見られます</li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="vertical-margin"></div>
-    <div class="container">
-      <div class="contents">
-        <div class="horizon-left horizon-div">
-          <div class="top-message">
-            <div class="con-msg-square"></div>
-            <h1>大会情報</h1>
-          </div>
-          <p>←</p>
-        </div>
-        <div class="horizon-right horizon-div">
-          <div class="r-top">
-            <div class="to-add-link">
-              <div class="top-message">
-                <div class="topic-msg-square msg-square"></div>
-                <h1>トピックから選ぶ</h1>
-              </div>
-              <a href="#">show more</a>
-            </div>
-            <ul>
-              <li>【海外】○○年越しの世界記録更新へ</li>
-              <li>【日本】闘病からの完全復活</li>
-              <li>【日本】今大会日本勢エースの活躍に期待</li>
-              <li>【海外】数年間、1強状態の種目</li>
-            </ul>
-          </div>
-          <div class="r-bottom">
-            <div class="to-add-link">
-              <div class="top-message">
-                <div class="swimmer-msg-square msg-square"></div>
-                <h1>選手から選ぶ</h1>
-              </div>
-              <a href="#">show more</a>
-            </div>
-            <p>右下</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
   </div>
   <footer>
     <div class="container">

@@ -133,7 +133,6 @@ $(function(){
   });
   // スライドを開く
   $('.view-more-btn').click(function(){
-    $('.slide-board-back').slideDown(500);
     if($('.athlete-modal10').hasClass('modal-active')){
       $('.slide-board').addClass('slide3');
     }
@@ -142,6 +141,9 @@ $(function(){
     }
     if($('.most-remarked').hasClass('modal-active')){
       $('.slide-board').addClass('slide5');
+      $('.slide5-2').fadeIn(500);
+    }else{
+      $('.slide5-2').fadeOut(500);
     }
     if($('.Irie').hasClass('modal-active')){
       $('.slide-board').addClass('slide6');
@@ -155,7 +157,10 @@ $(function(){
     if($('.gossip2').hasClass('modal-active')){
       $('.slide-board').addClass('slide9');
     }
-    $('.slide-board').fadeIn(500);
-    $('#close-slide').fadeIn(500);
+    if(!$('.tokui-modal').hasClass('modal-active')){
+      $('.slide-board-back').slideDown(500);
+      $('.slide-board').fadeIn(500);
+      $('#close-slide').fadeIn(500);
+    }
   });
 });

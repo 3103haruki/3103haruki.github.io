@@ -25,17 +25,21 @@ a {
 /* トップ画面 */
 .top-wrapper {
   padding: 170px 0 100px 0;
-  background-image: url(../top.png);
+  background-image: url(../top.jpg);
   background-size: cover;
 }
 
 .top-message{
   display: flex;
   flex-direction: row;
-}
-
-.top-message{
   color: #fff;
+}
+.backblack{
+  background-color: rgba(0, 0, 0, .7);
+  line-height: 35px;
+}
+.topic-top li{
+  padding-bottom: 5px;
 }
 /* h1行の隣の四角 */
 .msg-square{
@@ -51,7 +55,7 @@ a {
 }
 
 .topic-msg-square{
-  border-color: purple;
+  border-color: skyblue;
 }
 
 .swimmer-msg-square{
@@ -61,12 +65,12 @@ a {
 .callender{
   display: flex;
   justify-content: space-between;
-  background-color: orange;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .cl-box{
   width: 12%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, .98);
 }
   /* table */
 .cl-box table{
@@ -83,8 +87,14 @@ a {
 }
 
 .cl-line{
-  border: solid 1px gray;
   border-collapse: collapse;
+}
+.cl-border{
+  border: solid 2px gray;
+}
+.cl-border-updown{
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
 }
 
 .top-wrapper h1 {
@@ -167,6 +177,19 @@ header {
   padding: 2px;
   width: 15px;
 }
+.male{
+  padding-top: 3px;
+  padding-right: 1px;
+  width: 12px;
+}
+.flags{
+  padding: 2px;
+  width: 25px;
+}
+
+.pool{
+  width: 300px;
+}
 
 .header-top{
   display: flex;
@@ -177,7 +200,7 @@ header {
   display: block;
   height: 85px;
   width: 95px;
-  background-color:rgba(255, 255, 255, .6);
+  background-color:rgba(255, 255, 255, 1);
   border-top: solid blue 5px;
   border-right: 1px solid black;
   margin-top: -5px;
@@ -230,6 +253,7 @@ header {
 
 .contents{
   /* background-color:  red; */
+  background-color: rgba(0,0,0,.7);
   display: flex;
   width: 100%;
 }
@@ -261,6 +285,7 @@ header {
 }
 
 .horizon-left{
+  padding-left: 5px;
   /* background-color: white; */
 }
 
@@ -390,7 +415,43 @@ header {
   /* display: none; */
   display: block;
 }
+.gaiyo-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.rule{
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #53b9bf;
+  margin-right: 80px;
+  margin-top: 70px;
+}
 .tokui-modal{
+}
+.high-light{
+  border-bottom: solid #e85884 2px;
+}
+.coolest{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 220px;
+  padding: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #e85884;
+  color: #fff;
+}
+.coolest::before{
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px transparent solid;
+  border-bottom: 10px solid #e85884;
+  top: -20px;
+  left: 30px;
 }
 .athlete-modal99{
 }
@@ -411,6 +472,9 @@ header {
 }
 .modal-text{
   width: 450px;
+}
+.modal-text-l p{
+  padding-left: 15px;
 }
 .swimmer-name{
   font-size: 17px;
@@ -576,17 +640,62 @@ header {
   left: 0;
   z-index: 3;
 }
+.slide5-2{
+  position: absolute;
+  display: none;
+  top: 350px;
+  right: 40px;
+  width: 360px;
+  height:270px;
+}
+.slide5-2 p{
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+}
+.slide5-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.s5-2box, .s5-2box2{
+  width: 150px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.s5-2box{
+  background-color: #d3eced;
+  border: solid 1px #53b9bf;
+}
+.s5-2box2{
+  background-color: #dce8e8;
+}
+.WR{
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding-top: 5px;
+  border-bottom: 2px double #e85884;
+}
+
 #close-slide{
   display: none;
-  content: '';
+  cursor: pointer;
   position: fixed;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   top: 160px;
   left: calc(50% - 880px /2 - 50px);
-  background-color: black;
+  background-color: rgba(255,255,255, .8);
   z-index: 4;
+}
+.minus{
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 17px auto;
 }
 /* 大枠 */
 .lesson-wrapper {
