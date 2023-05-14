@@ -163,4 +163,33 @@ $(function(){
       $('#close-slide').fadeIn(500);
     }
   });
+  $('.br-box').hover(function(){
+    $('.br-detail').slideDown(300);
+  },function(){
+    $('.br-detail').slideUp(300);
+  });
+  $('.fly-box').hover(function(){
+    $('.fly-detail').slideDown(300);
+  },function(){
+    $('.fly-detail').slideUp(300);
+  });
+  $('.ba-box').hover(function(){
+    $('.ba-detail').slideDown(300);
+  },function(){
+    $('.ba-detail').slideUp(300);
+  });
+  $('.fr-box').hover(function(){
+    $('.fr-detail').slideDown(300);
+  },function(){
+    $('.fr-detail').slideUp(300);
+  });
+  $('.im-box').hover(function(){
+    $('.im-detail').slideDown(300);
+  },function(){
+    $('.im-detail').slideUp(300);
+  });
+  $('.style-detail').click(function(){
+    var $url = 'https://olympics.com/ja/news/swimming-world-champs-2023-fukuoka-team-japan-announced-ikee-narita';
+    window.open($url, '_blank');
+  })
 });

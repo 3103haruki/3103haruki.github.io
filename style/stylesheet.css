@@ -301,6 +301,11 @@ header {
   padding-left: 5px;
 }
 /* topicの設定 */
+.top-topic-list{
+  padding-left: 10px;
+  font-size: 35px;
+  color: #fff;
+}
 .topics{
   display: flex;
   justify-content: space-between;
@@ -386,7 +391,7 @@ header {
 .modal{
   margin: 10px;
   padding: 10px;
-  height: 350px;
+  height: 400px;
   display: flex;
   justify-content: space-between;
 }
@@ -643,7 +648,7 @@ header {
 .slide5-2{
   position: absolute;
   display: none;
-  top: 350px;
+  top: 330px;
   right: 40px;
   width: 360px;
   height:270px;
@@ -659,6 +664,7 @@ header {
 }
 .s5-2box, .s5-2box2{
   width: 150px;
+  font-size: 13px;
   margin-left: 20px;
   margin-bottom: 10px;
   padding: 5px;
@@ -696,6 +702,95 @@ header {
   height: 3px;
   background-color: black;
   margin: 17px auto;
+}
+/* 種目別ページ */
+.style-content{
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  background-image: url(../images/slides/pool.png);
+  background-size: cover;
+  position: relative;
+}
+.style-content p{
+  margin: 0;
+  padding: 0;
+}
+.style-detail{
+  position: absolute;
+  background-color: transparent;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+.box-detail{
+  position: absolute;
+  background-color: rgba(255,255,255, .9);
+  border-radius: 5px;
+  border: dotted 5px skyblue;
+  width: 320px;
+  height: 240px;
+}
+.style-h{
+  font-size: 30px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+.style-p{
+  padding-left: 30px;
+}
+.style-swimmer{
+  padding-left: 40px;
+  font-weight: bold;
+}
+.swimmer-style{
+  padding-left: 50px;
+}
+.br-box{
+  top: 160px;
+  left: 150px;
+}
+.br-detail{
+  top: 160px;
+  left: 300px;
+  display: none;
+}
+.fly-box{
+  top: 240px;
+  left: 270px;
+}
+.fly-detail{
+  top: 240px;
+  left: 400px;
+  display: none;
+}
+.ba-box{
+  top: 310px;
+  left: 210px;
+}
+.ba-detail{
+  top: 250px;
+  left: 350px;
+  display: none;
+}
+.fr-box{
+  top: 380px;
+  left: 320px;
+}
+.fr-detail{
+  top: 300px;
+  left: 450px;
+  display: none;
+}
+.im-box{
+  top:450px;
+  left: 30px;
+}
+.im-detail{
+  top: 350px;
+  left: 150px;
+  display: none;
 }
 /* 大枠 */
 .lesson-wrapper {
