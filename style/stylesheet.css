@@ -20,7 +20,7 @@ a {
 
 /* 上下余白調整 */
 .vertical-margin{
-  margin:50px 0;
+  margin:30px 0;
 }
 /* トップ画面 */
 .top-wrapper {
@@ -65,7 +65,7 @@ a {
 .callender{
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(156, 197, 199, .7);
 }
 
 .cl-box{
@@ -89,12 +89,15 @@ a {
 .cl-line{
   border-collapse: collapse;
 }
+.cl-line td{
+  font-size: 85%;
+}
 .cl-border{
-  border: solid 2px gray;
+  border: solid 2px #e0c2cb;
 }
 .cl-border-updown{
-  border-top: solid 1px gray;
-  border-bottom: solid 1px gray;
+  border-top: solid 1px #e0c2cb;
+  border-bottom: solid 1px #e0c2cb;
 }
 
 .top-wrapper h1 {
@@ -270,7 +273,7 @@ header {
 }
 
 .horizon-div{
-  border: 5px rgba(255, 255, 255, .8) solid;
+  border: 5px rgba(156, 197, 199, .8) solid;
   width: 50%;
 }
 
@@ -303,7 +306,7 @@ header {
 /* topicの設定 */
 .top-topic-list{
   padding-left: 10px;
-  font-size: 35px;
+  font-size: 30px;
   color: #fff;
 }
 .topics{
@@ -429,7 +432,7 @@ header {
   border-radius: 5px;
   padding: 10px 20px;
   background-color: #53b9bf;
-  margin-right: 80px;
+  margin-right: 20px;
   margin-top: 70px;
 }
 .tokui-modal{
@@ -618,13 +621,13 @@ header {
 .slide-board{
   display: none;
   content: '';
-  width: 880px;
-  height: 660px;
+  width: 840px;
+  height: 620px;
   background-color: black;
   position: fixed;
-  top: 160px;
+  top: 30px;
   left: calc(50% - 880px / 2);
-  z-index: 5;
+  z-index: 15;
   background-size: cover;
 }
 .slide3{background-image: url(../images/slides/slide3.JPG);}
@@ -648,7 +651,7 @@ header {
 .slide5-2{
   position: absolute;
   display: none;
-  top: 330px;
+  top: 300px;
   right: 40px;
   width: 360px;
   height:270px;
